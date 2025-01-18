@@ -1,9 +1,10 @@
 
 import { Button, Card } from 'antd';
 import { JSX } from 'react';
-import GContainer from './share/container';
 import {LoginOutlined} from "@ant-design/icons"
-import SignupForm from './share/signupForm';
+import GContainer from '../share/container';
+import SignupForm from '../share/signupForm';
+
 
 /**
  * @since Jan 2025

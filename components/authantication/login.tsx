@@ -1,8 +1,10 @@
 import { Button, Card } from 'antd';
 import { JSX } from 'react';
-import GContainer from './share/container';
+
 import { AreaChartOutlined, LoginOutlined } from '@ant-design/icons';
-import LoginForm from './share/logiForm';
+import GContainer from '../share/container';
+import LoginForm from '../share/logiForm';
+
 
 /**
  * @since Jan 2025

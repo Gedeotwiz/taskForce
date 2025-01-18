@@ -5,7 +5,8 @@
  */
 
 import Authantication from "@/components/authantication"
-import GContainer from "@/components/authantication/share/container"
+import GContainer from "@/components/share/container"
+
 
 const IndexPage = ()=>{
     return (

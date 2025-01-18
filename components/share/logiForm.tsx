@@ -5,12 +5,16 @@ import type { FormProps } from 'antd';
 import GContainer from './container';
 import Link from 'next/link';
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
+import { useRouter } from 'next/navigation';
 
-const onFinish: FormProps['onFinish'] = (values) => {
-  console.log('Success:', values);
-};
+
 
 const LoginForm: React.FC = () => {
+  const router = useRouter();
+  const onFinish: FormProps['onFinish'] = (values) => {
+    console.log('Success:', values);
+    router.push("/dashboard");
+  };
   
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -20,7 +24,7 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <Form onFinish={onFinish}>
+    <Form >
       <GContainer className="pt-10 pb-5">
         <label htmlFor="email">Email</label>
         <Input id="email" type="text" placeholder="Email" />
@@ -50,8 +54,8 @@ const LoginForm: React.FC = () => {
       </GContainer>
 
       <GContainer>
-        <Button type="primary" htmlType="submit">
-          Submit
+        <Button type="primary" htmlType="submit" onClick={onFinish}>
+          <Link href="">Submit</Link>
         </Button>
       </GContainer>
     </Form>

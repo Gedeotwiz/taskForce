@@ -2,14 +2,19 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import type { FormProps } from 'antd';
-import GContainer from './container';
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
+import GContainer from './container';
 
-const onFinish: FormProps['onFinish'] = (values) => {
-  console.log('Success:', values);
-};
+
+
 
 const SignupForm: React.FC = () => {
+  
+
+  const onFinish: FormProps['onFinish'] = (values) => {
+    console.log('Success:', values);
+    
+  };
   
   const [passwordVisible, setPasswordVisible] = useState(false);
 
