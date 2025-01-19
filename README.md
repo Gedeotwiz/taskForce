@@ -14,6 +14,61 @@ pnpm dev
 bun dev
 ```
 
+## Installation & Setup
+
+### Prerequisites
+
+Node.js (v16+)
+
+npm or yarn
+
+Steps
+
+### Clone the repository:
+
+git clone https://github.com/your-repo/financial-tracker.git
+cd financial-tracker
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+### Configure environment variables:
+Create a .env file in the root directory and add the following:
+
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+
+
+### Run the development server:
+
+npm run start
+# or
+yarn dev
+
+Access the application at http://localhost:3000.
+
+Build for production:
+
+npm run build
+npm start
+
+### Folder Structure
+
+financial-tracker/
+├── components/         # Reusable UI components
+├── pages/              # Next.js pages
+├── public/             # Static assets
+├── styles/             # Global stylesheets
+├── utils/              # Helper functions and utilities
+├── hooks/              # Custom React hooks
+├── rtk/                # Redux Toolkit store and slices
+├── api/                # Backend API routes (if using Next.js API routes)
+└── README.md           # Project documentation
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
