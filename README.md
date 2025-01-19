@@ -26,8 +26,8 @@ Steps
 
 ### Clone the repository:
 
-git clone https://github.com/your-repo/financial-tracker.git
-cd financial-tracker
+[git clone https://github.com/your-repo/financial-tracker.git](https://github.com/Gedeotwiz/taskForce.git)
+cd taskForce
 
 Install dependencies:
 
