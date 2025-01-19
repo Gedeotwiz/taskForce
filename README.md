@@ -38,7 +38,7 @@ yarn install
 ### Configure environment variables:
 Create a .env file in the root directory and add the following:
 
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
+NEXT_PUBLIC_API_URL=[http://localhost:3000/api](https://taskforce-b.onrender.com/api/v1)
 
 
 ### Run the development server:
@@ -47,7 +47,7 @@ npm run start
 # or
 yarn dev
 
-Access the application at http://localhost:3000.
+Access the application at https://task-force-silk.vercel.app.
 
 Build for production:
 
